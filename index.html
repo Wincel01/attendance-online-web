@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Educef</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+   
+    <link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
+    <link rel="manifest" href="manifest.json" />
+  </head>
+
+  <body class="home">
+  
+<!-- header start -->
+<header class="header-content">
+  <div class="header-top hidden-sm hidden-xs" id="header-top">
+    <div class="container">
+      <nav class="navbar navbar-inverse header-top__top">
+        <div class="navbar-header"><a class="navbar-brand logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+        
+        <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+          <div class="form-search__input-group">
+            <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+            <div class="form-search__btn-group">
+              <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+            </div>
+          </div>
+        </form>
+    
+        <div class="nav navbar-nav navbar-right nav-right--notlogin">
+
+               
+                          <div class="nav-right__profile"><i class="glyph-icon flaticon-profile-2 nav-right__profile__icon"></i><span class="nav-right__profile__status"></span>
+                          </div>
+                        
+
+        </div>
+               
+        
+       
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom-header hidden-sm hidden-xs" id="scrollspy" data-spy="affix" data-offset-top="112">
+    <div class="container">
+      <div class="logo--menu"><a class="logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+      <nav class="menu-main">
+            <ul class="nav navbar-nav menu-main__list ">
+              <li class="menu-main__item active"><a class="menu-main__link " onclick="check()" id="home">home</a>
+              </li>
+              <li class="menu-main__item "><a class="menu-main__link " href="#" id="course">Departments</a>
+                <div class="dropdown-catagories dropdown-catagories--menu">
+                  <ul class="dropdown-catagories__list">
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-main__item "><a class="menu-main__link " href="#" id="bundle">Other Info</a>
+                <div class="dropdown-catagories dropdown-catagories--menu">
+                  <ul class="dropdown-catagories__list">
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fee Structure</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-main__item "><a class="menu-main__link " href="contact.html" id="partner">Contact Us</a> </li>
+              <li class="menu-main__item "><a class="menu-main__link " href="aboutus.html" id="blog">About Us</a> </li>
+            </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__mobile hidden-lg hidden-md">
+    <div class="header-top">
+      <div class="container">
+
+
+            <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+                    <div class="form-search__input-group">
+                      <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                      <div class="form-search__btn-group">
+                        <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                      </div>
+                    </div>
+            </form>
+
+        <div class="nav-right--notlogin nav-right--notlogin--mobile pull-right">
+         
+                <div class="nav-right__profile"><i class="glyph-icon flaticon-profile-2 nav-right__profile__icon"></i><span class="nav-right__profile__status"></span> </div>
+                
+         
+        </div>
+        <form class="navbar-form form-search--mobile" id="form-search-mobile">
+          <div class="container">
+            <div class="form-search__input-group">
+              <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+              <div class="form-search__btn-group">
+                <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+              </div>
+            </div>
+            <button class="dropdown-toggle form-search__button form-search__button--close" type="submit" data-toggle="collapse" data-target="#form-search-mobile"><i class="glyph-icon flaticon-access-denied form-search__icon"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <nav class="navbar" id="header-mobile" data-spy="affix" data-offset-top="75">
+      <div class="container">
+        <div class="categories--mobile pull-left"></div>
+        <button class="navbar-toggle nav-icon pull-right collapsed visible-sm visible-xs" id="menu-hamberger" data-toggle="collapse" data-target="#menu-main"><span class="bar"></span></button>
+        <div class="logo--mobile text-center"><a class="logo__link" href="http://swlabs.co/"><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+      </div>
+      <div class="menu-mobile">
+            <ul class="menu-mobile__list ">
+              <li class="menu-mobile__item"><a class="menu-mobile__link" onclick="check1()">home</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+               
+              </li>
+              <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Departments</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                <ul class="dropdown-menu dropdown-mobile">
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                 
+                </ul>
+              </li>
+              <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Other Info</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                <ul class="dropdown-menu dropdown-mobile">
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fees Structure</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                    <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                    </ul>
+              </li>
+              <li class="menu-mobile__item"><a class="menu-mobile__link" href="contact.html">Contact Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+              </li>
+              <li class="menu-mobile__item"><a class="menu-mobile__link" href="aboutus.html">About Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+              </li>
+            </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="button-default btn-ontop" id="on-top"><span class="glyph-icon flaticon-arrows-5"></span></div>
+</header>
+<!--Ending header-->    
+
+
+<!-- Login account5 code start -->
+<div class="modal fade signin-form" id="login" role="dialog">
+    <div class="modal-dialog signin-form__dialog">
+      <div class="signin-form__button-close hidden-lg hidden-md hidden-sm">
+        <button class="close signin-form__button-close__btn" type="button" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="signin-form__header"><a class="signin-form__header__logo"><img src="assets/img/logo/Logo-form.png" alt=""></a>
+        <p class="signin-form__sub">Universal access to the world’s best education.</p>
+      </div>
+      <div class="modal-content signin-form__content">
+        <div class="modal-body signin-form__body">
+          <div class="tab-content">
+           <div class="tab-pane fade in active" id="sign-in">
+              <h3 class="signin-form__body__title">Login </h3>
+              
+                <div class="signin-form__form__inputs">
+                  <input class="input-item" type="email" placeholder="Email"  id="email" >
+                  <input class="input-item" type="password" placeholder="Password"  id="pass" >
+                </div>
+
+                 <div style="margin-bottom: 20px" id='loaddiv' hidden>
+                  <div id="loader"></div>
+                  <p><b>Loading please wait</b></p>
+                </div>
+        
+                <div style="text-align: center; color: red"><p id="error"></p></div>
+
+                <button id="loginbtn" class="btn-green list-link__btn" onclick="renderLogin()" >Login</button>
+
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login account code  end -->
+  
+  
+  <!--  login into account button div Start -->
+      <div class="design-sprint">
+        <div class="container design-sprint__list">
+          <div class="row design-sprint__content">
+            <div class="col-lg-4 col-md-4 col-sm-4 design-sprint__item">
+              <h1 class="design-sprint__item__title">UpComing Courses</h1>
+              <p class="design-sprint__item__content">What do you want to learn today? What's your dream job? Discover the program that's right for today</p>
+              <div style="background:rgb(7,215,155)" class="col-equal courses__content"><a class="courses__content__title" >  <div class="nav-right__signin"><a class="nav-right__signin__link" href="#" data-toggle="modal" data-target="#login" data-modal-target="#" style="font-size: 100% ; color: white;"  > Login into Account </a></div> </a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 design-sprint__item-image">
+              <div class="design-sprint__wapper"><img class="design-sprint__wapper__image" src="assets/img/home/01.png" alt="Product management"></div>
+              <div class="design-sprint__contents"><a class="design-sprint__contents__title" href="#">product management</a><a class="design-sprint__contents__link" href="#">View Details</a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 design-sprint__item-image">
+              <div class="design-sprint__wapper"><img class="design-sprint__wapper__image" src="assets/img/courses/deeplearning.png" alt="Deep learning data analyst"></div>
+              <div class="design-sprint__contents"><a class="design-sprint__contents__title" href="#">deep learning data analyst</a><a class="design-sprint__contents__link" href="#">View Details</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </section>
+  <!--  login into account button div end -->
+  
+  <!--  Top rated div Start -->
+  <div class="list-course spy" id="course">
+        <div class="container">
+          <div class="list-course__header">
+            <h2 class="list-course__header__title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.002s"> top rated courses</h2>
+            <div class="list-course__view-more"><a class="list-course__header__btn"><span class="list-course__header__text">view more</span></a>
+              <div class="list-course__header__icon list-course-icon-arrow-course-rate"><span class="glyph-icon flaticon-arrows-3 list-course__header__icon-arrow"></span></div>
+            </div>
+          </div>
+          <div class="list-course__gird">
+            <div class="course rated-courses">
+                  <div class="rated-cou courses__list ">
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/graphicdesign.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">Graphic Desiging</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/saud.gif" alt=""></span><span class="courses__content__author-name">Saud Alam</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="4"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 10,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/ccna.png" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">CCNA</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/shahjahan.gif" alt=""></span><span class="courses__content__author-name">Shahjahan</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="3.5"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 12,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/cit.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">CIT</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/ahad.gif" alt=""></span><span class="courses__content__author-name">Abdul Ahad</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="5"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 15,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/neural.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">Neural Network</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/xubi.gif" alt=""></span><span class="courses__content__author-name">Muhammed Zubair</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="5"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">347</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">347</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 13,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/iospic.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div> 
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">iOS Development</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/ibbi.gif" alt=""></span><span class="courses__content__author-name">Ibad Anis</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="5"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 3,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/androidpic.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">Android Development </a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/munir.gif" alt=""></span><span class="courses__content__author-name">Munir</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="5"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 12,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses/ai.jpg" alt=""></div>
+                          <div class="courses__top__bundle">bundle</div>
+                          <div class="courses__top__bt-seller">best seller</div>
+                          <div class="courses__hover">
+                            <div class="courses__hover-content"><span class="courses__hover-content__item"><span class="glyph-icon flaticon-shapes courses__hover-content__icon"></span></span><span class="courses__hover-content__item"><span class="glyph-icon flaticon-interface courses__hover-content__icon"></span></span></div>
+                          </div>
+                        </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="#">AI</a>
+                          <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__avatar"><img class="courses__content__image" src="assets/img/partner/zooba1.gif" alt=""></span><span class="courses__content__author-name">Zooba Khan</span></a>
+                            <div class="courses__col-right">
+                              <div class="rating-start" data-rating="2"></div>
+                            </div>
+                          </div>
+                          <div class="courses__content__info">
+                            <div class="courses__col-left">
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span class="courses__content__number">200</span></div>
+                              <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span class="courses__content__number">417</span></div>
+                            </div>
+                            <div class="courses__col-right courses__content__price">PKR 10,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  <!--  Top rated div end -->
+  
+  <!-- images div start-->
+      <div class="best-features event spy" id="partner">
+        <div class="container">
+          <div class="list-course__header">
+            <h2 class="list-course__header__title"> our best features</h2>
+          </div>
+          <div class="row">
+            <div class="item">
+              <div class="col-lg-5 col-md-5 item__left wow zoomInLeft"><img class="item__left__image" src="assets/img/home/icon-01.png" alt="">
+                <h3 class="item__left__title">Suitable Course For Your Goal</h3>
+                <p class="item__left__content">
+                  These courses are designed exclusively for the rich and want to start a new life.
+                  A career that keeps pace with the high salary you deserve, we own the learning paths
+                  that are designed specifically for those with professional ambition to create a source of
+                  high-minded & skilled workforce.
+                </p>
+              </div>
+              <div class="col-lg-7 col-md-7 item__right">
+                <div class="item__right__image-left"><img class="item__right__image" src="assets/img/home/03.png" alt=""></div>
+                <div class="item__right__image-right"><img class="item__right__image" src="assets/img/home/04.png" alt=""></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-lg-5 col-md-5 item__left wow zoomInRight"><img class="item__left__image" src="assets/img/home/icon-02.png" alt="">
+                <h3 class="item__left__title">Master The Most Competitive Skills</h3>
+                <p class="item__left__content">
+                  Quality assessment and skill verification are highly appreciated by industry experts and certified.
+                  Take the courses here, you will be learn with the world's most forward-thinking companies, Google,
+                  Facebook, AT&T, IBM, GitHub, and more.
+                </p>
+              </div>
+              <div class="col-lg-7 col-md-7 item__right">
+                <div class="item__right__image-left"><img class="item__right__image" src="assets/img/home/05.png" alt=""></div>
+                <div class="item__right__image-right"><img class="item__right__image" src="assets/img/home/06.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="promotions spy" id="event">
+        <div class="container">
+          <div class="row promotions__list">
+            <div class="col-lg-6 col-md-6 col-sm-6 promotions__item"><a class="pro-item pro-item--left" href="coming-soon.html">
+                <div class="pro-item__item"><span class="glyph-icon flaticon-shield pro-item__icon"></span></div>
+                <div class="pro-item__item">
+                  <div class="pro-item__title">Free Courses</div>
+                  <p class="pro-item__subcontent">Refresh your knowledge on best learning path. No prior knowledge is required.</p>
+                </div></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 promotions__item"><a class="pro-item" href="scholarships.html">
+                <div class="pro-item__item"><span class="glyph-icon flaticon-shield pro-item__icon"></span></div>
+                <div class="pro-item__item">
+                  <div class="pro-item__title">Scholarships</div>
+                  <p class="pro-item__subcontent">Our institute also Provide scholarships to deserving and needy Students</p>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+  
+  <!-- images div end -->
+  
+  <!-- Feed back div start -->
+      <div class="form-subs spy" id="forum">
+        <div class="container">
+          <div class="row form-subs__content">
+            <div class="col-lg-6 col-md-6 col-sm-12 column-item">
+              <h2 class="form-subs__title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.002s"> Give Us a Feedback</h2>
+              <p class="form-subs__sub">For new better ideas!</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 column-item">
+             
+                <input class="form-subs__input" id="indexmsg" type="text" placeholder="Write Feedback here ...">
+                <button class="btn btn-default button-default form-subs__button" id="submitbtn" onclick="indexfeedback()" >Submit</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- feedback div ended -->
+ 
+   <!-- footer Start -->
+   <div id="includedFooter"></div>
+  <!-- footer end -->
+  </div>
+
+
+   <div id="toast"></div>
+
+   
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src='firebase.js'></script>
+    <script src="assets/js/toast.js"></script>
+
+    <script src="assets/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/lib/js/bootstrap.min.js"></script>
+    <script src="assets/lib/slick/slick.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery-matchHeight.js"></script>
+    <script src="assets/js/slicks.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/customjs/index.js"></script>
+    <script src="head&foot.js"></script>
+    <script src="assets/js/script.js"></script>
+    <div class="positionfixed"></div>
+  </body>
+
+<!-- Mirrored from swlabs.co/educef/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 14:11:22 GMT -->
+</html>

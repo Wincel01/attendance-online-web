@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Educef 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customcss.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body class="home02">
+
+
+    <header class="header-content">
+      <div class="header-top hidden-sm hidden-xs" id="header-top">
+        <div class="container">
+          <nav class="navbar navbar-inverse header-top__top">
+            <div class="navbar-header"><a class="navbar-brand logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+            
+            <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+              <div class="form-search__input-group">
+                <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                <div class="form-search__btn-group">
+                  <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                </div>
+              </div>
+            </form>
+        
+            <div class="nav navbar-nav navbar-right nav-right--notlogin">
+    
+                   
+              <div class="nav-right__profile" style="text-align: center" onclick="signout()"><i  class="glyph-icon flaticon-profile-2 nav-right__profile__icon" onclick="signout()" > Signout </i> <span class="nav-right__profile__status"></span>
+              </div>
+            
+                            
+    
+            </div>
+                   
+            
+           
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom-header hidden-sm hidden-xs" id="scrollspy" data-spy="affix" data-offset-top="112">
+        <div class="container">
+          <div class="logo--menu"><a class="logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+          <nav class="menu-main">
+                <ul class="nav navbar-nav menu-main__list ">
+                  <li class="menu-main__item active"><a class="menu-main__link " onclick="check()" id="home">home</a>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="#" id="course">Departments</a>
+                    <div class="dropdown-catagories dropdown-catagories--menu">
+                      <ul class="dropdown-catagories__list">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="#" id="bundle">Other Info</a>
+                    <div class="dropdown-catagories dropdown-catagories--menu">
+                      <ul class="dropdown-catagories__list">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fee Structure</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="contact.html" id="partner">Contact Us</a> </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="aboutus.html" id="blog">About Us</a> </li>
+                </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__mobile hidden-lg hidden-md">
+        <div class="header-top">
+          <div class="container">
+    
+    
+                <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+                        <div class="form-search__input-group">
+                          <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                          <div class="form-search__btn-group">
+                            <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                          </div>
+                        </div>
+                </form>
+    
+            <div class="nav-right--notlogin nav-right--notlogin--mobile pull-right">
+             
+                    <div class="nav-right__profile"><i class="glyph-icon flaticon-profile-2 nav-right__profile__icon"></i><span class="nav-right__profile__status"></span> </div>
+                    
+             
+            </div>
+            <form class="navbar-form form-search--mobile" id="form-search-mobile">
+              <div class="container">
+                <div class="form-search__input-group">
+                  <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                  <div class="form-search__btn-group">
+                    <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                  </div>
+                </div>
+                <button class="dropdown-toggle form-search__button form-search__button--close" type="submit" data-toggle="collapse" data-target="#form-search-mobile"><i class="glyph-icon flaticon-access-denied form-search__icon"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <nav class="navbar" id="header-mobile" data-spy="affix" data-offset-top="75">
+          <div class="container">
+            <div class="categories--mobile pull-left"></div>
+            <button class="navbar-toggle nav-icon pull-right collapsed visible-sm visible-xs" id="menu-hamberger" data-toggle="collapse" data-target="#menu-main"><span class="bar"></span></button>
+            <div class="logo--mobile text-center"><a class="logo__link" href="http://swlabs.co/"><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+          </div>
+          <div class="menu-mobile">
+                <ul class="menu-mobile__list ">
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" onclick="check1()">home</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                   
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Departments</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                    <ul class="dropdown-menu dropdown-mobile">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Other Info</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                    <ul class="dropdown-menu dropdown-mobile">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fees Structure</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                        </ul>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="contact.html">Contact Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="aboutus.html">About Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                  </li>
+
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" onclick="signout()">Signout</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                   
+                  </li>
+
+                </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="button-default btn-ontop" id="on-top"><span class="glyph-icon flaticon-arrows-5"></span></div>
+    </header>
+    <!--Ending header-->    
+    
+
+
+<!-- student change credentials start -->
+<div class="modal fade signin-form" id="studentchangeinfo" role="dialog">
+  <div class="modal-dialog signin-form__dialog">
+    <div class="signin-form__button-close hidden-lg hidden-md hidden-sm">
+      <button class="close signin-form__button-close__btn" type="button" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="signin-form__header"><a class="signin-form__header__logo" href="#"><img src="assets/img/logo/Logo-form.png" alt=""></a>
+      <p class="signin-form__sub">Universal access to the world’s best education.</p>
+    </div>
+    <div class="modal-content signin-form__content">
+      <div class="modal-body signin-form__body">
+        <div class="tab-content">
+         <div class="tab-pane fade in active" id="sign-in">
+            <h3 class="signin-form__body__title">Update Info </h3>
+           
+              <div class="signin-form__form__inputs">
+                <input class="input-item" id='sname' type="text" placeholder="User name" required>
+                <input class="input-item" id='saddress' type="text" placeholder="Address" required>
+                <input class="input-item" id='spass'type="password" placeholder="Password" required>
+                <input class="input-item" id='srepass'type="password" placeholder="Confirm Password" required>
+                <input class="input-item" id='sphone' type="number" placeholder="Phone No" required>
+
+                <div class="form-group">
+                  <label>Department</label><br>
+                  <select id="deptname" class="form-control" >
+                  <option   value="Computer-Engineering">Computer Engineering</option>
+                  <option value="Software-Engineering" selected="selected">Software Engineering</option>
+                  <option value="Computer-Science">Computer Science</option>
+                  </select>
+              </div>
+                </div>
+
+              <div style="margin-bottom: 20px" id='loaddiv' hidden>
+                <div id="loader"></div>
+                <p><b>Loading please wait</b></p>
+              </div>
+
+              <div style="text-align: center"> <p id="error"></p> </div>
+
+              <button class="btn-green list-link__btn" id='stdbtn' >Update Info</button>
+       
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--student change credentials end -->
+
+
+
+
+
+<!--Start adds Buttons -->
+<div class="section-specializationsl">
+    <div class="container">
+      <div class="list-course__header">
+        <h4 class="list-course__header__title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.002s">Add Details</h4>
+        
+      </div>
+      <div class="card-slide">
+     <div class="specializations card-slide-top">
+     <div class="special courses__list ">
+
+  <div class="undefined courses__item ">
+    <div class="courses__wapper  ">
+      <div class="col-equal courses__top">
+        <div class="courses__top__wapper details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/scanqrcode.jpg" alt=""></div>
+       </div>
+      <div class="col-equal courses__content"><a class="courses__content__title" href="studentScanQRcode.html">Scan QRCode</a></div>
+      </div>
+    </div>
+
+
+
+    <div class="undefined courses__item">
+      <div class="courses__wapper">
+        <div class="col-equal courses__top">
+          <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/feedback.jpg" alt=""></div>
+         </div>
+        <div class="col-equal courses__content"><a class="courses__content__title" href="contact.html">FeedBacks</a></div>
+        </div>
+      </div>
+
+   
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- End adds button -->
+
+
+
+<!-- start view btn code -->
+<div class="section-specializationsl">
+    <div class="container">
+      <div class="list-course__header">
+        <h4 class="list-course__header__title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.002s">View Details</h4>
+        <div class="list-course__view-more"><a class="list-course__header__btn"><span class="list-course__header__text">view more</span></a>
+          <div class="list-course__header__icon list-course-icon-arrow-special"><span class="glyph-icon flaticon-arrows-3 list-course__header__icon-arrow"></span></div>
+        </div>
+      </div>
+      <div class="card-slide">
+        <div class="specializations card-slide-top">
+              <div class="special courses__list ">
+              
+                <div class="undefined courses__item ">
+                  <div class="courses__wapper  ">
+                    <div class="col-equal courses__top">
+                      <div class="courses__top__wapper details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/uploadfile1.png" alt=""></div>
+                     </div>
+                    <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewFiles.html">View Files</a></div>
+                    </div>
+                  </div>
+
+                  <div class="undefined courses__item">
+                    <div class="courses__wapper">
+                      <div class="col-equal courses__top">
+                        <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/viewresult2.jpg" alt=""></div>
+                       </div>
+                      <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewMarks.html">View Marks</a></div>
+                      </div>
+                    </div>
+
+                    <div class="undefined courses__item">
+                      <div class="courses__wapper">
+                        <div class="col-equal courses__top">
+                          <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/info.png" alt=""></div>
+                         </div>
+                        <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewPersonalInfo.html">Personal Info</a></div>
+                        </div>
+                      </div>
+
+
+                        <div class="undefined courses__item">
+                          <div class="courses__wapper">
+                            <div class="col-equal courses__top">
+                              <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/attendance.jpg" alt=""></div>
+                             </div>
+                            <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewAttendance.html">View Attendance</a></div>
+                            </div>
+                          </div>   
+                         
+                          <!--
+                          <div class="undefined courses__item">
+                              <div class="courses__wapper">
+                                <div class="col-equal courses__top">
+                                  <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/viewresult.jpg" alt=""></div>
+                                 </div>
+                                <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewResult.html">View Result</a></div>
+                                </div>
+                              </div>
+                            -->
+                              <div class="undefined courses__item">
+                                  <div class="courses__wapper">
+                                    <div class="col-equal courses__top">
+                                      <div class="courses__top__wapper  details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/notification.jpg" alt=""></div>
+                                     </div>
+                                    <div class="col-equal courses__content"><a class="courses__content__title" href="studentViewNotifications.html">Notifications</a></div>
+                                    </div>
+                                  </div>   
+
+                      </div>
+                    </div>
+                </div>
+              </div>    
+          </div>
+          <!-- end view btn code -->
+
+
+
+
+
+
+
+
+<!--Start adds messenger -->
+
+<div class="section-specializationsl">
+    <div class="container">
+      <div class="list-course__header">
+        <h4 class="list-course__header__title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.002s">Chat Messenger</h4>
+        
+      </div>
+      <div class="card-slide">
+     <div class="specializations card-slide-top">
+     <div class="special courses__list ">
+
+  <div class="undefined courses__item ">
+    <div class="courses__wapper  ">
+      <div class="col-equal courses__top">
+        <div class="courses__top__wapper details_btn"><img class="courses__top__image" src="assets/img/studentafterlogin/1to1chat.png" alt=""></div>
+       </div>
+      <div class="col-equal courses__content"><a class="courses__content__title" href="chatlist.html">Messenger</a></div>
+      </div>
+    </div>
+
+ 
+
+    
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- End adds messengers -->
+
+
+     <!-- footer Start -->
+     <div id="includedFooter"></div>
+      
+      <!-- footer end -->
+    
+        <script src="assets/lib/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/lib/js/bootstrap.min.js"></script>
+        <script src="assets/lib/slick/slick.min.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/jquery-matchHeight.js"></script>
+        <script src="assets/js/slicks.js"></script>
+        <script src="assets/js/home.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="head&foot.js"></script>
+        <div class="positionfixed"></div>
+        <script>
+        
+     if(localStorage.getItem('myid')==undefined ||localStorage.getItem('myid')=='' || localStorage.getItem('myid')==null ||
+      localStorage.getItem('myemail')==undefined ||localStorage.getItem('myemail')=='' || localStorage.getItem('myemail')==null){
+       showToast('Oops some thing went wrong');
+       window.location.replace('index.html');
+     }
+
+     function signout(){
+       localStorage.clear();
+       window.location.replace('index.html')
+     }
+
+
+       function  check(){
+      var acctype = localStorage.getItem('type');
+      if(acctype == 'principal'){
+        window.location.replace('adminAfterLogin.html');
+     } else if(acctype == 'student'){
+        window.location.replace('studentafterlogin.html');
+     } else if(acctype == 'teacher'){
+        window.location.replace('teacherAfterLogin.html');
+     } else{
+      window.location.replace('index.html');
+     }
+    }
+
+    function  check1(){
+      var acctype = localStorage.getItem('type');
+      if(acctype == 'principal'){
+        window.location.replace('adminAfterLogin.html');
+     } else if(acctype == 'student'){
+        window.location.replace('studentafterlogin.html');
+     } else if(acctype == 'teacher'){
+        window.location.replace('teacherAfterLogin.html');
+     } else{
+      window.location.replace('index.html');
+     }
+    }
+
+   
+   
+        
+        </script>
+      </body>
+    
+    <!-- Mirrored from swlabs.co/educef/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 14:11:22 GMT -->
+    </html>
+
+

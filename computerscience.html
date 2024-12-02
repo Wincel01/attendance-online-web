@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Educef 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body class="home02">
+
+    <header class="header-content">
+      <div class="header-top hidden-sm hidden-xs" id="header-top">
+        <div class="container">
+          <nav class="navbar navbar-inverse header-top__top">
+            <div class="navbar-header"><a class="navbar-brand logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+            
+            <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+              <div class="form-search__input-group">
+                <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                <div class="form-search__btn-group">
+                  <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                </div>
+              </div>
+            </form>
+        
+            <div class="nav navbar-nav navbar-right nav-right--notlogin">
+    
+                   
+                              <div class="nav-right__profile"><i class="glyph-icon flaticon-profile-2 nav-right__profile__icon"></i><span class="nav-right__profile__status"></span>
+                              </div>
+                            
+    
+            </div>
+                   
+            
+           
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom-header hidden-sm hidden-xs" id="scrollspy" data-spy="affix" data-offset-top="112">
+        <div class="container">
+          <div class="logo--menu"><a class="logo__link" ><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+          <nav class="menu-main">
+                <ul class="nav navbar-nav menu-main__list ">
+                  <li class="menu-main__item active"><a class="menu-main__link " onclick="check()" id="home">home</a>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="#" id="course">Departments</a>
+                    <div class="dropdown-catagories dropdown-catagories--menu">
+                      <ul class="dropdown-catagories__list">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="#" id="bundle">Other Info</a>
+                    <div class="dropdown-catagories dropdown-catagories--menu">
+                      <ul class="dropdown-catagories__list">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fee Structure</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="contact.html" id="partner">Contact Us</a> </li>
+                  <li class="menu-main__item "><a class="menu-main__link " href="aboutus.html" id="blog">About Us</a> </li>
+                </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__mobile hidden-lg hidden-md">
+        <div class="header-top">
+          <div class="container">
+    
+    
+                <form class="navbar-form navbar-left form-search" style="margin-left:30px">
+                        <div class="form-search__input-group">
+                          <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                          <div class="form-search__btn-group">
+                            <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                          </div>
+                        </div>
+                </form>
+    
+            <div class="nav-right--notlogin nav-right--notlogin--mobile pull-right">
+             
+                    <div class="nav-right__profile"><i class="glyph-icon flaticon-profile-2 nav-right__profile__icon"></i><span class="nav-right__profile__status"></span> </div>
+                    
+             
+            </div>
+            <form class="navbar-form form-search--mobile" id="form-search-mobile">
+              <div class="container">
+                <div class="form-search__input-group">
+                  <input class="form-control form-search__input" type="text" placeholder="Search your course...">
+                  <div class="form-search__btn-group">
+                    <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                  </div>
+                </div>
+                <button class="dropdown-toggle form-search__button form-search__button--close" type="submit" data-toggle="collapse" data-target="#form-search-mobile"><i class="glyph-icon flaticon-access-denied form-search__icon"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <nav class="navbar" id="header-mobile" data-spy="affix" data-offset-top="75">
+          <div class="container">
+            <div class="categories--mobile pull-left"></div>
+            <button class="navbar-toggle nav-icon pull-right collapsed visible-sm visible-xs" id="menu-hamberger" data-toggle="collapse" data-target="#menu-main"><span class="bar"></span></button>
+            <div class="logo--mobile text-center"><a class="logo__link" href="http://swlabs.co/"><img class="logo__image" src="assets/img/logo/Logo-header.png" alt="Logo Educef"></a></div>
+          </div>
+          <div class="menu-mobile">
+                <ul class="menu-mobile__list ">
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" onclick="check1()">home</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                   
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Departments</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                    <ul class="dropdown-menu dropdown-mobile">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerengineering.html">Computer Engineering</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="computerscience.html">Computer Science</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="softwareengineering.html">Software Engineering</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Other Info</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                    <ul class="dropdown-menu dropdown-mobile">
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="feestructure.html">Fees Structure</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="coming-soon.html">Coming Soon</a></li>
+                        <li class="dropdown-catagories__item "><a class="dropdown-catagories__link dropdown-catagories__link--full" href="scholarships.html">Scholarships</a></li>
+                        </ul>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="contact.html">Contact Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                  </li>
+                  <li class="menu-mobile__item"><a class="menu-mobile__link" href="aboutus.html">About Us</a><span class="dropdown-toggle glyph-icon flaticon-arrows-3 menu-mobile__icon" data-toggle="dropdown" onClick="void(0)"></span>
+                  </li>
+                </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="button-default btn-ontop" id="on-top"><span class="glyph-icon flaticon-arrows-5"></span></div>
+    </header>
+    <!--Ending header-->    
+
+    <!-- END OF HEADER -->
+
+    <div class="modal fade signin-form" id="modal-signin" role="dialog">
+      <div class="modal-dialog signin-form__dialog">
+        <div class="signin-form__button-close hidden-lg hidden-md hidden-sm">
+          <button class="close signin-form__button-close__btn" type="button" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="signin-form__header"><a class="signin-form__header__logo" href="#"><img src="assets/img/logo/Logo-form.png" alt=""></a>
+          <p class="signin-form__sub">Universal access to the world’s best education.</p>
+        </div>
+        <div class="modal-content signin-form__content">
+          <div class="modal-body signin-form__body">
+            <ul class="signin-form__tabs">
+              <li class="active signin-form__tabs__items"><a class="signin-form__tabs__link" data-toggle="tab" href="#sign-in">Sign In</a></li>
+              <li class="signin-form__tabs__items"><a class="signin-form__tabs__link" data-toggle="tab" href="#sign-up">Sign Up</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="sign-in">
+                <h3 class="signin-form__body__title">Log Into Your Account</h3>
+                <p class="signin-form__body__sub">Your student account is your portal to all things Educef: your classroom, projects, forums, career resources, and more!</p>
+                <form class="signin-form__form">
+                  <div class="signin-form__form__inputs">
+                    <input class="input-item" type="text" placeholder="Email">
+                    <input class="input-item" type="password" placeholder="Password">
+                  </div>
+                  <button class="btn-green list-link__btn">Sign In</button><a class="signin-form__link" href="#">Forgot your password?</a>
+                </form>
+                <div class="group-btn-socials">
+                  <p class="group-btn-socials__sub">or sign in with one of these services</p>
+                  <div class="btn-social btn-social--facebook"><i class="glyph-icon flaticon-social-1"></i><i>facebook</i></div>
+                  <div class="btn-social btn-social--twitter"><i class="glyph-icon flaticon-twitter-logo-silhouette"></i><i>twitter</i></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sign-up">
+                <h3 class="signin-form__body__title">Log Into Your Account</h3>
+                <p class="signin-form__body__sub">Your student account is your portal to all things Educef: your classroom, projects, forums, career resources, and more!</p>
+                <form class="signin-form__form">
+                  <div class="signin-form__form__inputs">
+                    <input class="input-item" type="text" placeholder="User name">
+                    <input class="input-item" type="email" placeholder="Email">
+                    <input class="input-item" type="password" placeholder="Password">
+                    <input class="input-item" type="password" placeholder="Confirm Password">
+                  </div>
+                  <button class="btn-green list-link__btn">Sign Up</button>
+                </form>
+                <div class="group-btn-socials">
+                  <p class="group-btn-socials__sub">or sign up with one of these services</p>
+                  <div class="btn-social btn-social--facebook"><i class="glyph-icon flaticon-social-1"></i><i>facebook</i></div>
+                  <div class="btn-social btn-social--twitter"><i class="glyph-icon flaticon-twitter-logo-silhouette"></i><i>twitter</i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signin-form__footer"><a class="signin-form__footer__link" href="#">Having trouble logging in?</a></div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="intro-course-content">
+          <div class="intro-course">
+            <div class="intro-course__title">Department of Computer Science</div>
+            <div class="intro-course__infor">
+              <div class="intro-course__infor__item"><a class="intro-course__infor__name" href="#">Hamza Iqbal</a><span class="intro-course__infor__time">January 16, 2002</span></div>
+              <div class="intro-course__infor__item">
+                <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-shapes icon-custom"></span></span><span>347</span></div>
+                <div class="col-left__item"><span class="courses__content__icon"><span class="glyph-icon flaticon-profile-1 icon-custom"></span></span><span>347</span></div>
+              </div>
+            </div>
+            <div class="intro-course__wapper"><img class="intro-course__wapper__image" src="assets/img/computer-science/cs.jpg" alt=""></div>
+            <div class="intro-course__sub">
+              <div class="text-sub">Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It is the scientific and practical approach to computation and its applications and the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to, information. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A computer scientist specializes in the theory of computation and the design of computational systems. See glossary of computer science.</div>
+             
+            </div>
+            <div class="row intro-course__col">
+              <div class="col-md-5">
+                
+          
+        </div>
+        <nav class="breadcrumb-wapper">
+          <ul class="breadcrumb">
+            
+          </ul>
+        </nav>
+      </div>
+    </main>
+
+    <div id="includedFooter"></div>
+
+    <script src="assets/lib/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/lib/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="head&foot.js"></script>
+    <div class="positionfixed"></div>
+
+    <script>
+      function  check(){
+       var acctype = localStorage.getItem('type');
+       if(acctype == 'principal'){
+         window.location.replace('adminAfterLogin.html');
+      } else if(acctype == 'student'){
+         window.location.replace('studentafterlogin.html');
+      } else if(acctype == 'teacher'){
+         window.location.replace('teacherAfterLogin.html');
+      } else{
+       window.location.replace('index.html');
+      }
+     }
+ 
+     function  check1(){
+       var acctype = localStorage.getItem('type');
+       if(acctype == 'principal'){
+         window.location.replace('adminAfterLogin.html');
+      } else if(acctype == 'student'){
+         window.location.replace('studentafterlogin.html');
+      } else if(acctype == 'teacher'){
+         window.location.replace('teacherAfterLogin.html');
+      } else{
+       window.location.replace('index.html');
+      }
+     }
+     
+     </script>
+
+
+  </body>
+
+<!-- Mirrored from swlabs.co/educef/html/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 14:32:29 GMT -->
+</html>
